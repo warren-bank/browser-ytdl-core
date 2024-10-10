@@ -7,7 +7,7 @@
 
   utils.saveDebugFile = n => n
 
-  utils.request = (url, options = {}) => fetch(url, options).then(res => res.text())
+  utils.request = (url, options = {}) => fetch(url, options.requestOptions).then(res => res.text())
 }
 
 window.ytdl = require('@distube/ytdl-core')
