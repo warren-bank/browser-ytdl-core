@@ -14,10 +14,10 @@
     "build":        "npm run build:es2020 && npm run build:es5"
   },
   "dependencies": {
+    "@warren-bank/vm-browserify": "1.1.3",
     "buffer": "6.0.3",
     "querystring-es3": "0.2.1",
     "stream-browserify": "3.0.0",
-    "vm-browserify": "1.1.2",
     "ytdl-core": "4.11.5"
   },
   "devDependencies": {

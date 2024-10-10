@@ -22,7 +22,7 @@ module.exports = {
       "buffer":      require.resolve("buffer/"),
       "querystring": require.resolve("querystring-es3"),
       "stream":      require.resolve("stream-browserify"),
-      "vm":          require.resolve("vm-browserify")
+      "vm":          require.resolve("@warren-bank/vm-browserify")
     }
   },
   module: {
