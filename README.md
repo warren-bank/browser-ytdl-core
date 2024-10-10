@@ -1,6 +1,6 @@
-### [_browser-ytdl-core_](https://github.com/warren-bank/browser-ytdl-core/tree/fent)
+### [_browser-ytdl-core_](https://github.com/warren-bank/browser-ytdl-core/tree/distubejs)
 
-Browser build for [_node-ytdl-core_](https://github.com/fent/node-ytdl-core): YouTube video downloader in pure javascript
+Browser build for [_node-ytdl-core_](https://github.com/distubejs/ytdl-core): YouTube video downloader in pure javascript
 
 #### Build
 
@@ -13,7 +13,7 @@ npm run build
 #### CDN
 
 ```html
-  <script src="//cdn.jsdelivr.net/npm/@warren-bank/browser-ytdl-core@4.11.5-fent.1/dist/es2020/ytdl-core.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@warren-bank/browser-ytdl-core@4.14.4-distubejs.1/dist/es2020/ytdl-core.js"></script>
 ```
 
 #### Usage
@@ -35,6 +35,6 @@ npm run build
 
 #### Legal
 
-* license for [_node-ytdl-core_](https://github.com/fent/node-ytdl-core/releases/tag/v4.11.5) is [MIT](https://github.com/fent/node-ytdl-core/blob/v4.11.5/LICENSE)
-* license for [_browser-ytdl-core_](https://github.com/warren-bank/browser-ytdl-core/releases/tag/v4.11.5-fent.1) is [GPL-2.0](https://github.com/warren-bank/browser-ytdl-core/blob/v4.11.5-fent.1/LICENSE.txt)
+* license for [_node-ytdl-core_](https://github.com/distubejs/ytdl-core/releases/tag/4.14.4) is [MIT](https://github.com/distubejs/ytdl-core/blob/4.14.4/LICENSE)
+* license for [_browser-ytdl-core_](https://github.com/warren-bank/browser-ytdl-core/releases/tag/v4.14.4-distubejs.1) is [GPL-2.0](https://github.com/warren-bank/browser-ytdl-core/blob/v4.14.4-distubejs.1/LICENSE.txt)
   - only covers the content of this repo, which contains primarily build scripts

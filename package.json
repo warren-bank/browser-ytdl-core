@@ -1,6 +1,6 @@
 {
   "name": "@warren-bank/browser-ytdl-core",
-  "version": "4.11.5-fent.1",
+  "version": "4.14.4-distubejs.1",
   "description": "Browser build for 'node-ytdl-core': YouTube video downloader in pure javascript",
   "license": "GPL-2.0",
   "main": "dist/es2020/ytdl-core.js",
@@ -14,11 +14,11 @@
     "build":        "npm run build:es2020 && npm run build:es5"
   },
   "dependencies": {
+    "@distube/ytdl-core": "4.14.4",
     "@warren-bank/vm-browserify": "1.1.3",
     "buffer": "6.0.3",
     "querystring-es3": "0.2.1",
-    "stream-browserify": "3.0.0",
-    "ytdl-core": "4.11.5"
+    "stream-browserify": "3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.23.0",
@@ -36,7 +36,7 @@
     "type": "git",
     "url": "https://github.com/warren-bank/browser-ytdl-core"
   },
-  "homepage": "https://github.com/warren-bank/browser-ytdl-core/tree/fent",
+  "homepage": "https://github.com/warren-bank/browser-ytdl-core/tree/distubejs",
   "keywords": [
     "youtube",
     "video",

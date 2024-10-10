@@ -54,6 +54,10 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.NormalModuleReplacementPlugin(
+      new RegExp('^\\./agent$'),
+      'not_supported_agent'
+    ),
     new webpack.DefinePlugin({
       "process.env": {
         NODE_ENV:       JSON.stringify('production'),
