@@ -1,4 +1,5 @@
 {
+  const miniget        = require('miniget')
   const {setMockAgent} = require('not_supported_agent')
   const utils          = require('@distube/ytdl-core/lib/utils')
 
@@ -7,7 +8,7 @@
 
   utils.saveDebugFile = n => n
 
-  utils.request = (url, options = {}) => fetch(url, options.requestOptions).then(res => res.text())
+  utils.request = (url, options = {}) => miniget(url, options.requestOptions).text()
 }
 
 window.ytdl = require('@distube/ytdl-core')
