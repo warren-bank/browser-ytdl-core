@@ -1,6 +1,6 @@
 {
   "name": "@warren-bank/browser-ytdl-core",
-  "version": "4.14.4-distubejs.2",
+  "version": "4.14.4-distubejs.3",
   "description": "Browser build for 'node-ytdl-core': YouTube video downloader in pure javascript",
   "license": "GPL-2.0",
   "main": "dist/es2020/ytdl-core.js",

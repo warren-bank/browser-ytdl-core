@@ -13,7 +13,7 @@ npm run build
 #### CDN
 
 ```html
-  <script src="//cdn.jsdelivr.net/npm/@warren-bank/browser-ytdl-core@4.14.4-distubejs.2/dist/es2020/ytdl-core.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@warren-bank/browser-ytdl-core@4.14.4-distubejs.3/dist/es2020/ytdl-core.js"></script>
 ```
 
 #### Usage
@@ -36,5 +36,5 @@ npm run build
 #### Legal
 
 * license for [_node-ytdl-core_](https://github.com/distubejs/ytdl-core/releases/tag/4.14.4) is [MIT](https://github.com/distubejs/ytdl-core/blob/4.14.4/LICENSE)
-* license for [_browser-ytdl-core_](https://github.com/warren-bank/browser-ytdl-core/releases/tag/v4.14.4-distubejs.2) is [GPL-2.0](https://github.com/warren-bank/browser-ytdl-core/blob/v4.14.4-distubejs.2/LICENSE.txt)
+* license for [_browser-ytdl-core_](https://github.com/warren-bank/browser-ytdl-core/releases/tag/v4.14.4-distubejs.3) is [GPL-2.0](https://github.com/warren-bank/browser-ytdl-core/blob/v4.14.4-distubejs.3/LICENSE.txt)
   - only covers the content of this repo, which contains primarily build scripts
