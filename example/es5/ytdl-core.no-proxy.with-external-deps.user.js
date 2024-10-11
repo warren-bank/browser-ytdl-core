@@ -10,22 +10,23 @@
 // @match        *://*.youtube.com/embed/*
 // @icon         https://www.youtube.com/favicon.ico
 // @run-at       document_end
+// @grant        none
 // ==/UserScript==
 
-var addAllGlobals = function() {
-  // DOM for "youtube.com" is dirty.
-  //   It contains many of its own polyfill libraries.
-  //   This script depends on them!
-  //
-  //   Note that this is a brittle methodology,
-  //   and this script could break if these libraries
-  //   were to be removed from the YouTube web site.
-  //
-  //   In addition to the provided polyfills, "URL" is required.
-  //   The old testing browser provides a non-functional "URL",
-  //   and YouTube's polyfill libraries don't replace it.
+var addMissingGlobals = function() {
+  // "youtube.com" provides several polyfill libraries.
+  // This userscript demonstrates using these external dependencies to run ytdl-core in older browsers.
+  // No polyfill library is provided for the URL class.
+  // Testing reveals that Chrome 30 has a URL class,
+  // but its implementation isn't consistent with modern standards;
+  // an external polyfill is required.
 
-  Object.assign(window, {"URL": window.jsURL.URL})
+  if (!window.URL || (typeof window.URL !== 'function') || !window.URLSearchParams || (typeof window.URLSearchParams !== 'function')) {
+    Object.assign(window, {
+      "URL":             window.jsURL.URL,
+      "URLSearchParams": window.jsURL.URLSearchParams
+    })
+  }
 }
 
 // add support for CSP 'Trusted Type' assignment
@@ -45,7 +46,7 @@ var add_default_trusted_type_policy = function() {
 }
 
 if (window.ytdl) {
-  addAllGlobals()
+  addMissingGlobals()
 
   // avoid CSP error:
   //   Failed to set the 'innerHTML' property on 'Element': This document requires 'TrustedHTML' assignment.

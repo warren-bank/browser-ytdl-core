@@ -8,23 +8,10 @@
 // @match        *://example.com/*
 // @icon         https://www.youtube.com/favicon.ico
 // @run-at       document_end
+// @grant        none
 // ==/UserScript==
 
-var addAllGlobals = function() {
-  // No op.
-  //
-  // DOM for "example.com" is pure.
-  //   TamperMonkey stores the userscript polyfill library Objects in "window".
-  //
-  // DOM for "youtube.com" is dirty.
-  //   It contains many of its own polyfill libraries,
-  //   and changes "window" property attributes in such a way to cause:
-  //   TamperMonkey stores the userscript polyfill library Objects in "unsafeWindow".
-}
-
 if (window.ytdl) {
-  addAllGlobals()
-
   window.ytdl.getInfo(
     'https://www.youtube.com/watch?v=CICY20dQUPk',
     {

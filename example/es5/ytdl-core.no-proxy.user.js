@@ -11,39 +11,8 @@
 // @match        *://*.youtube.com/embed/*
 // @icon         https://www.youtube.com/favicon.ico
 // @run-at       document_end
+// @grant        none
 // ==/UserScript==
-
-var addGlobals = function(whats) {
-  var what, obj
-
-  if (!Array.isArray(whats))
-    whats = [whats]
-
-  for (var i=0; i < whats.length; i++) {
-    what = whats[i]
-    if (window[what] !== unsafeWindow[what]) {
-      try {
-        obj = {}
-        obj[what] = unsafeWindow[what]
-        Object.assign(window, obj)
-      }
-      catch(e) {}
-    }
-  }
-}
-
-var addAllGlobals = function() {
-  // DOM for "youtube.com" is dirty.
-  //   It contains many of its own polyfill libraries,
-  //   and changes "window" property attributes in such a way to cause:
-  //   TamperMonkey stores the userscript polyfill library Objects in "unsafeWindow".
-
-  if ((typeof unsafeWindow !== 'undefined') && (unsafeWindow !== window)) {
-    addGlobals(
-      Object.getOwnPropertyNames(unsafeWindow)
-    )
-  }
-}
 
 // add support for CSP 'Trusted Type' assignment
 var add_default_trusted_type_policy = function() {
@@ -62,8 +31,6 @@ var add_default_trusted_type_policy = function() {
 }
 
 if (window.ytdl) {
-  addAllGlobals()
-
   // avoid CSP error:
   //   Failed to set the 'innerHTML' property on 'Element': This document requires 'TrustedHTML' assignment.
   add_default_trusted_type_policy()
