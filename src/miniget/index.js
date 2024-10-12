@@ -33,7 +33,7 @@ const miniget = function(url, requestOptions) {
 
   const fetchOptions = {
     method:      'GET',
-    mode:        'no-cors',
+    mode:        'cors',
     credentials: 'include',
     redirect:    'follow'
   }
