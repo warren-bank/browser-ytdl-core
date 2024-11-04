@@ -1,0 +1,28 @@
+{
+  "name": "@warren-bank/browser-ytdl-core",
+  "version": "6.0.5-ybd-project.1",
+  "description": "Browser build for 'node-ytdl-core': YouTube video downloader in pure javascript",
+  "license": "GPL-2.0",
+  "main": "dist/es2020/ytdl-core.js",
+  "files": [
+    "dist/es2020/*"
+  ],
+  "scripts": {
+    "build": "node ./bin/build.js"
+  },
+  "author": {
+    "name": "Warren R. Bank",
+    "email": "warren.r.bank@gmail.com",
+    "url": "https://github.com/warren-bank"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/warren-bank/browser-ytdl-core"
+  },
+  "homepage": "https://github.com/warren-bank/browser-ytdl-core/tree/ybd-project",
+  "keywords": [
+    "youtube",
+    "video",
+    "download"
+  ]
+}
