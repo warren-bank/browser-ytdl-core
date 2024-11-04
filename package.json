@@ -1,0 +1,28 @@
+{
+  "name": "@warren-bank/browser-ytdl-core",
+  "version": "2024.11.04-yt-dlp.1",
+  "description": "YouTube video downloader in pure javascript",
+  "license": "GPL-2.0",
+  "main": "dist/ytdl-core.js",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "node ./bin/build.js"
+  },
+  "author": {
+    "name": "Warren R. Bank",
+    "email": "warren.r.bank@gmail.com",
+    "url": "https://github.com/warren-bank"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/warren-bank/browser-ytdl-core"
+  },
+  "homepage": "https://github.com/warren-bank/browser-ytdl-core/tree/yt-dlp",
+  "keywords": [
+    "youtube",
+    "video",
+    "download"
+  ]
+}
