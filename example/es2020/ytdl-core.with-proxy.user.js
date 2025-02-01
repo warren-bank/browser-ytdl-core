@@ -3,7 +3,7 @@
 // @description  example: proxy is used to bypass CORS restriction, when CSP allows
 // @version      1.0.0
 // @require      ../../dist/es2020/ytdl-core.js
-// @match        *://example.com/*
+// @match        *://*.example.com/*
 // @icon         https://www.youtube.com/favicon.ico
 // @run-at       document_end
 // @grant        none

@@ -1,6 +1,6 @@
 {
   "name": "@warren-bank/browser-ytdl-core",
-  "version": "6.0.5-ybd-project.1",
+  "version": "6.0.8-ybd-project.1",
   "description": "Browser build for 'node-ytdl-core': YouTube video downloader in pure javascript",
   "license": "GPL-2.0",
   "main": "dist/es2020/ytdl-core.js",
