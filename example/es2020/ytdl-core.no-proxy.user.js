@@ -3,8 +3,6 @@
 // @description  example: CORS restricts usage to 'youtube.com' domain
 // @version      1.0.0
 // @require      ../../dist/es2020/ytdl-core.js
-// @match        *://youtube.com/watch?v=*
-// @match        *://youtube.com/embed/*
 // @match        *://*.youtube.com/watch?v=*
 // @match        *://*.youtube.com/embed/*
 // @icon         https://www.youtube.com/favicon.ico

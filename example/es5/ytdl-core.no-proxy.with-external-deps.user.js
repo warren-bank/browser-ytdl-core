@@ -4,8 +4,6 @@
 // @version      1.0.0
 // @require      https://github.com/warren-bank/js-url/raw/v3.1.4/es5-browser/jsURL.js
 // @require      ../../dist/es5/ytdl-core.js
-// @match        *://youtube.com/watch?v=*
-// @match        *://youtube.com/embed/*
 // @match        *://*.youtube.com/watch?v=*
 // @match        *://*.youtube.com/embed/*
 // @icon         https://www.youtube.com/favicon.ico

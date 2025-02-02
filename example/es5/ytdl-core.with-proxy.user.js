@@ -5,7 +5,7 @@
 // @require      https://cdnjs.cloudflare.com/ajax/libs/core-js/3.33.3/minified.min.js
 // @require      https://unpkg.com/whatwg-fetch@3.6.19/dist/fetch.umd.js
 // @require      ../../dist/es5/ytdl-core.js
-// @match        *://example.com/*
+// @match        *://*.example.com/*
 // @icon         https://www.youtube.com/favicon.ico
 // @run-at       document_end
 // @grant        none
