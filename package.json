@@ -1,6 +1,6 @@
 {
   "name": "@warren-bank/browser-ytdl-core",
-  "version": "4.16.0-distubejs.1",
+  "version": "4.16.5-neder11ndeu-f56b052.1",
   "description": "Browser build for 'node-ytdl-core': YouTube video downloader in pure javascript",
   "license": "GPL-2.0",
   "main": "dist/es2020/ytdl-core.js",
@@ -10,11 +10,11 @@
   ],
   "scripts": {
     "build:es2020": "webpack --config webpack.es2020.config.js",
-    "build:es5":    "webpack --config webpack.es5.config.js",
-    "build":        "npm run build:es2020 && npm run build:es5"
+    "build:es5": "webpack --config webpack.es5.config.js",
+    "build": "npm run build:es2020 && npm run build:es5"
   },
   "dependencies": {
-    "@distube/ytdl-core": "4.16.0",
+    "@distube/ytdl-core": "github:Neder11ndeu/yt-donglot#f56b052cd5055390df789f178911af9eeff03124",
     "@warren-bank/vm-browserify": "1.1.3",
     "buffer": "6.0.3",
     "querystring-es3": "0.2.1",
